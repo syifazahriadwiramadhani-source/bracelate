@@ -1,153 +1,196 @@
+
 <!DOCTYPE html>
 <html lang="id">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Thrift & Trend Co. — Gen Z Outfit Store</title>
+    <title>My Portfolio | Personal Website</title>
     <link rel="stylesheet" href="style.css">
-    <!-- Google Fonts: Syne & Plus Jakarta Sans untuk kesan edgy & modern -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;700&family=Syne:wght@700;800&display=swap" rel="stylesheet">
 </head>
 <body>
 
-    <!-- Navigasi -->
-    <header class="navbar">
-        <div class="logo">THRIFT&TREND<span>.</span></div>
-        <nav>
-            <ul class="nav-links">
+    <!-- NAVBAR -->
+    <header>
+        <nav class="navbar">
+            <h2 class="logo">My<span>Portfolio.</span></h2>
+
+            <ul class="nav-menu">
                 <li><a href="#home">Home</a></li>
-                <li><a href="#catalog">Katalog</a></li>
-                <li><a href="#vibe">Vibe Check</a></li>
-                <li><a href="#contact" class="cart-btn">Cart (0)</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
     </header>
 
-    <!-- Hero Section -->
+    <!-- HOME -->
     <section id="home" class="hero">
-        <div class="hero-badge">🔥 Drop Terbaru Minggu Ini</div>
-        <h1>REWRITE YOUR <span class="highlight">STYLE</span> RULES.</h1>
-        <p>Kurasi pakaian vintage, streetwear, dan oversized aesthetic terbaik khusus buat kamu yang bosen tampil biasa aja.</p>
-        <div class="hero-cta">
-            <a href="#catalog" class="btn btn-primary">Belanja Sekarang</a>
-            <a href="#vibe" class="btn btn-outline">Lihat Lookbook</a>
+        <div class="hero-content">
+            <p class="subtitle">WELCOME TO MY PORTFOLIO</p>
+
+            <h1>Hi, I'm <span>Syifa</span></h1>
+
+            <h2>Informatics Engineering Student</h2>
+
+            <p class="description">
+                Saya adalah mahasiswa Teknik Informatika yang
+                memiliki ketertarikan dalam dunia teknologi,
+                desain, dan pengembangan website.
+                Saya senang mempelajari hal baru dan
+                mengembangkan kreativitas melalui teknologi.
+            </p>
+
+            <a href="#projects" class="btn">Explore My Work</a>
+        </div>
+
+        <div class="hero-image">
+            <div class="profile-circle">
+                <img src="assets/profile-syifa.jpeg" alt="Foto profil Syifa">
+            </div>
         </div>
     </section>
 
-    <!-- Ticker Berjalan (Gaya Gen Z Brand) -->
-    <div class="ticker">
-        <div class="ticker-track">
-            <span>⚡ FREE SHIPPING MIN. 150K</span>
-            <span>•</span>
-            <span>100% AUTHENTIC THRIFT & STREETWEAR</span>
-            <span>•</span>
-            <span>NEW DROP EVERY FRIDAY</span>
-            <span>•</span>
-            <span>⚡ FREE SHIPPING MIN. 150K</span>
-            <span>•</span>
-            <span>100% AUTHENTIC THRIFT & STREETWEAR</span>
-        </div>
-    </div>
-
-    <!-- Katalog Produk -->
-    <section id="catalog" class="section">
-        <div class="section-header">
-            <h2>Koleksi Pilihan <span class="dot">.</span></h2>
-            <p>Pilih outfit andalanmu sebelum kehabisan!</p>
+    <!-- ABOUT -->
+    <section id="about" class="about section">
+        <div class="section-title">
+            <p>GET TO KNOW ME</p>
+            <h2>About Me</h2>
         </div>
 
-        <div class="product-grid">
-            <!-- Produk 1 -->
-            <div class="product-card">
-                <div class="product-badge">Best Seller</div>
-                <div class="product-img-box">
-                    <img src="https://images.unsplash.com/photo-1578587018452-892bacefd3f2?auto=format&fit=crop&w=600&q=80" alt="Oversized Hoodie">
-                </div>
-                <div class="product-info">
-                    <span class="category">Streetwear</span>
-                    <h3>Oversized Vintage Hoodie</h3>
-                    <p class="price">Rp 189.000</p>
-                    <button class="btn-buy">Tambah ke Keranjang</button>
-                </div>
-            </div>
+        <div class="about-content">
+            <div class="about-text">
+                <h3>Hello! I'm Syifa Zahria Dwi Ramadhani.</h3>
 
-            <!-- Produk 2 -->
-            <div class="product-card">
-                <div class="product-badge hot">Hot Item</div>
-                <div class="product-img-box">
-                    <img src="https://images.unsplash.com/photo-1541099649105-f69ad21f3246?auto=format&fit=crop&w=600&q=80" alt="Cargo Pants">
-                </div>
-                <div class="product-info">
-                    <span class="category">Bottoms</span>
-                    <h3>Parachute Cargo Pants</h3>
-                    <p class="price">Rp 210.000</p>
-                    <button class="btn-buy">Tambah ke Keranjang</button>
-                </div>
-            </div>
+                <p>
+                    Saya merupakan mahasiswa Teknik Informatika
+                    yang memiliki minat besar terhadap perkembangan
+                    teknologi informasi.
+                </p>
 
-            <!-- Produk 3 -->
-            <div class="product-card">
-                <div class="product-badge">Limited</div>
-                <div class="product-img-box">
-                    <img src="https://images.unsplash.com/photo-1521572267360-ee0c2909d518?auto=format&fit=crop&w=600&q=80" alt="Graphic Tee">
-                </div>
-                <div class="product-info">
-                    <span class="category">T-Shirt</span>
-                    <h3>Y2K Graphic Vintage Tee</h3>
-                    <p class="price">Rp 125.000</p>
-                    <button class="btn-buy">Tambah ke Keranjang</button>
-                </div>
-            </div>
+                <p>
+                    Saya tertarik mempelajari pemrograman,
+                    pengembangan website, UI/UX Design,
+                    serta teknologi digital. Saya percaya bahwa
+                    setiap proses belajar merupakan kesempatan
+                    untuk berkembang menjadi lebih baik.
+                </p>
 
-            <!-- Produk 4 -->
-            <div class="product-card">
-                <div class="product-badge">New</div>
-                <div class="product-img-box">
-                    <img src="https://images.unsplash.com/photo-1551028719-00167b16eac5?auto=format&fit=crop&w=600&q=80" alt="Denim Jacket">
-                </div>
-                <div class="product-info">
-                    <span class="category">Outerwear</span>
-                    <h3>Washed Denim Jacket</h3>
-                    <p class="price">Rp 250.000</p>
-                    <button class="btn-buy">Tambah ke Keranjang</button>
+                <div class="about-info">
+                    <p><strong>Nama:</strong> Syifa Zahria Dwi Ramadhani</p>
+                    <p><strong>Jurusan:</strong> Teknik Informatika</p>
+                    <p><strong>Status:</strong> Mahasiswa</p>
+                    <p><strong>Lokasi:</strong> Indonesia</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Section Vibe Check / Banner Interaktif -->
-    <section id="vibe" class="vibe-section">
-        <div class="vibe-content">
-            <h2>Gak Nemu Gaya yang Pas?</h2>
-            <p>Gabung sama komunitas kita di Discord & Instagram buat ikutan voting desain baju berikutnya!</p>
-            <a href="#" class="btn btn-primary">Gabung Komunitas</a>
+    <!-- SKILLS -->
+    <section id="skills" class="skills section">
+        <div class="section-title">
+            <p>WHAT I CAN DO</p>
+            <h2>My Skills</h2>
+        </div>
+
+        <div class="skills-container">
+
+            <div class="skill-card">
+                <div class="skill-icon">💻</div>
+                <h3>HTML</h3>
+                <p>Membuat struktur dan elemen website.</p>
+            </div>
+
+            <div class="skill-card">
+                <div class="skill-icon">🎨</div>
+                <h3>CSS</h3>
+                <p>Mendesain tampilan website yang menarik.</p>
+            </div>
+
+            <div class="skill-card">
+                <div class="skill-icon">🐍</div>
+                <h3>Python</h3>
+                <p>Mempelajari dasar pemrograman Python.</p>
+            </div>
+
+            <div class="skill-card">
+                <div class="skill-icon">📐</div>
+                <h3>UI/UX Design</h3>
+                <p>Membuat desain antarmuka yang informatif.</p>
+            </div>
+
         </div>
     </section>
 
-    <!-- Footer -->
+    <!-- PROJECTS -->
+    <section id="projects" class="projects section">
+        <div class="section-title">
+            <p>MY RECENT WORK</p>
+            <h2>My Projects</h2>
+        </div>
+
+        <div class="project-container">
+
+            <div class="project-card">
+                <div class="project-number">01</div>
+                <h3>Personal Portfolio</h3>
+                <p>
+                    Website pribadi untuk menampilkan
+                    profil, kemampuan, dan pengalaman.
+                </p>
+                <span>HTML • CSS</span>
+            </div>
+
+            <div class="project-card">
+                <div class="project-number">02</div>
+                <h3>Student Data System</h3>
+                <p>
+                    Program sederhana untuk mengelola
+                    dan mencari data mahasiswa.
+                </p>
+                <span>Python • Programming</span>
+            </div>
+
+            <div class="project-card">
+                <div class="project-number">03</div>
+                <h3>UI/UX Design</h3>
+                <p>
+                    Perancangan desain antarmuka
+                    aplikasi yang mudah digunakan.
+                </p>
+                <span>UI/UX • Design</span>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="contact section">
+        <div class="section-title">
+            <p>LET'S CONNECT</p>
+            <h2>Contact Me</h2>
+        </div>
+
+        <p class="contact-description">
+            Terima kasih telah mengunjungi website portofolio saya.
+            Mari terhubung dan berbagi pengalaman!
+        </p>
+
+        <div class="contact-info">
+            <p>📧 Email: syifazahriadwiramadhani@email.com</p>
+            <p>📱 Instagram: @syifazdr</p>
+            <p>📍 Indonesia</p>
+        </div>
+
+        <a href="mailto:alexandra@email.com" class="btn">
+            Send Me an Email
+        </a>
+    </section>
+
+    <!-- FOOTER -->
     <footer>
-        <div class="footer-content">
-            <div class="footer-brand">
-                <h3>THRIFT&TREND<span>.</span></h3>
-                <p>Pusatnya OOTD kekinian anak muda yang autentik dan ramah di kantong.</p>
-            </div>
-            <div class="footer-links">
-                <h4>Navigasi</h4>
-                <a href="#home">Beranda</a>
-                <a href="#catalog">Katalog</a>
-                <a href="#vibe">Vibe Check</a>
-            </div>
-            <div class="footer-contact">
-                <h4>Kontak</h4>
-                <p>Jl. Mastrip No. 88, Jember</p>
-                <p>WhatsApp: 0812-3456-7890</p>
-            </div>
-        </div>
-        <div class="footer-bottom">
-            <p>&copy; 2026 Thrift & Trend Co. Crafted with Code & Passion.</p>
-        </div>
+        <p>© 2026 Syifa Zahria Dwi Ramadhani. All Rights Reserved.</p>
+        <p>Designed with HTML & CSS.</p>
     </footer>
 
 </body>
